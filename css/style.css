@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* ....scroll effect.... */
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* .....navbar..........  */
+nav{
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #fd2d22;
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+
+/* This is common class for all div in navbar
+.navbar{
+    border: 2px solid red;
+} */
+
+/* Logo */
+#nav1{
+    flex: 1;
+    /* background-color: teal; */
+}
+#nav1 #logo{
+    padding: 8px;
+}
+
+/* list items */
+#nav2{
+    flex: 3;
+    /* background-color: yellow; */
+}
+#nav2 ul{
+    list-style: none;
+}
+#nav2 ul li{
+    display: inline-flex;
+}
+#nav2 ul li a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 21px 22px;
+    text-transform: uppercase;
+}
+#nav2 ul li a:hover{
+    color: #fbff00;
+}
+
+/* searchbar */
+#nav3{
+    flex: 2;
+    /* background-color: violet; */
+}
+#nav3 ul{
+   list-style: none;
+   display: flex;
+}
+#nav3 input{
+    height: 38px;
+    padding: 0px 15px;
+    margin: 11px 0px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px 0px 0px 5px;
+}
+#nav3 #btn1{
+    cursor: pointer;
+    padding: 0px 25px;
+    height: 38px;
+    margin: 11px 0px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #65ffee;
+    border: 1px solid white;
+}
+#nav3 #btn1:hover{
+    background: #ff006e;
+} 
+
+
+
+/* ....Home.......  */
+#Home ::before{
+    content: "";
+    background:url("/img/Instagram.jpg") no-repeat center center/cover;
+    /* clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0); */
+    clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    height: 535px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+
+#Home {
+    display: flex;
+    height: 535px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#Home #content1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+#Home #content1 h3{
+    font-size: 12px;
+}
+#Home #content1 h1{
+    color: #000000;
+    font-size: 45px;
+    margin: 14px 0px;
+}
+#Home #content1 h4{
+    font-size: 14px;
+    margin: 20px 0px;
+}
+#Home #content1 .btn2{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    border: 3px solid white;
+}
+#Home #content1 #btn1{
+    background-color: #fff3b0;
+    
+}
+#Home #content1 #btn2{
+    /* background-color:#e0afa0 ; */
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+/* Animation Property */
+.glow {
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+
+/* ...About............ */
+#About ::before{
+    content: "";
+    background:url("/img/Ibiza\ Sunset.jpg")  no-repeat center center/cover;
+    position: absolute;
+    top: 595px;
+    left: 0px;
+    height: 555px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+
+#About{
+    display: flex;
+    flex-wrap: wrap;
+    height: 555px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid black; */
+}
+#About h2{
+    font-size: 30px;
+    margin: 14px 0px;
+}
+#About article {
+    width: 60%;
+    background-color:white;
+    /* border: 3px solid black; */
+    padding: 0px 55px 55px 55px;
+    margin: 20px;
+}
+#About article summary{
+    background-color: #e7f1ff;
+    border: 1px solid #dfdfdf;
+}
+#About aside {
+    margin: 20px;
+    width: 30%;
+    box-shadow: 11px 12px 5px 0px rgba(0,0,0,0.75);
+    background: black;
+}
+
+
+
+/* ...Services............ */
+#services ::before{
+    content: "";
+    background:url("/img/Instagram.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 1150px;
+    left: 0px;
+    height: 620px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+
+#services{
+    height: 620px;
+}
+#services h2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 25px 0px 0px 0px;
+}
+#services #boxes{
+    margin: 34px 0px;
+    display: flex;
+    height: 580px;
+    width: 100%;
+}
+#services #boxes h2{
+    font-size: 30px;
+    text-align: center;
+    color: #ef233c;
+}
+#services #boxes .box{ 
+
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 0px 55px 97px 55px;
+    border-radius: 28px;
+    background: #F6F0ED;
+}
+#services #boxes .box:hover{
+    background-color: #d2ffa9;
+}
+#services #boxes .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   width: 100%;
+}
+#services #boxes .box p{
+    font-family: 'Bree Serif', serif;
+} 
+
+
+
+/* ...Contact............ */
+#contact ::before{
+    content: "";
+    background:url("/img/Ibiza\ Sunset.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 1770px;
+    left: 0px;
+    height: 630px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+
+#contact{
+    height: 558px;
+}
+#contact h2{
+    font-size: 30px;
+    text-align: center;
+    color: #65f1ff;
+    margin: 25px 0px 0px 0px;
+}
+#contact #contact-box{
+    display: flex;
+    justify-content: center;
+}
+#contact #contact-box form{
+    width: 50%;
+    margin: 20px 0px;
+}
+#contact #contact-box form .formerror{
+    font-weight: bold;
+    background-color: beige;
+    color: red;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+#contact #contact-box input, 
+#contact #contact-box textarea{
+    width: 100%;
+    padding: 10px;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: blanchedalmond;
+} 
+#contact #contact-box ::placeholder {
+    color: red;
+}
+#contact #contact-box label{
+   font-size: 20px;
+   color: #fff;
+}
+#contact #submitbtn{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    padding: 12px 15px;
+    border-radius: 18px;
+    float: right;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+#contact #submitbtn:hover{
+    background-color: #4f16e8;
+}
+
+
+
+/* ...Footer......... */
+footer div h2{
+    text-align: center;
+    text-decoration: underline;
+    margin: 35px 0px 0px 0px;
+    color: #9c3d60;
+}
+footer div ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 8px 0px;
+}
+footer div ul li a{
+   padding: 0px 5px;
+}
+footer #copyright{
+  text-align: center;
+  padding: 7px 0px;
+  background-color: black;
+  color: white;
+}
