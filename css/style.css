@@ -95,7 +95,7 @@ nav{
 /* ....Home.......  */
 #Home ::before{
     content: "";
-    background:url("/img/Instagram.jpg") no-repeat center center/cover;
+    background:url("/mywebproject/img/Instagram.jpg") no-repeat center center/cover;
     /* clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0); */
     clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
     position: absolute;
@@ -168,7 +168,7 @@ nav{
 /* ...About............ */
 #About ::before{
     content: "";
-    background:url("/img/Ibiza\ Sunset.jpg")  no-repeat center center/cover;
+    background:url("/mywebproject/img/Ibiza\ Sunset.jpg")  no-repeat center center/cover;
     position: absolute;
     top: 595px;
     left: 0px;
@@ -214,7 +214,7 @@ nav{
 /* ...Services............ */
 #services ::before{
     content: "";
-    background:url("/img/Instagram.jpg") no-repeat center center/cover;
+    background:url("/mywebproject/img/Instagram.jpg") no-repeat center center/cover;
     position: absolute;
     top: 1150px;
     left: 0px;
@@ -270,7 +270,7 @@ nav{
 /* ...Contact............ */
 #contact ::before{
     content: "";
-    background:url("/img/Ibiza\ Sunset.jpg") no-repeat center center/cover;
+    background:url("/mywebproject/img/Ibiza\ Sunset.jpg") no-repeat center center/cover;
     position: absolute;
     top: 1770px;
     left: 0px;
