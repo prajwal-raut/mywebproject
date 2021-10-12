@@ -1,5 +1,101 @@
-@media screen and (max-width: 1280px){
-    body{
-        display: none;
+@media screen and (max-width: 1032px) {
+  /* Header section  */
+  header {
+    display: flex;
+    height: 57px;
+  }
+
+  #logo {
+      margin: 0px 8px;
     }
+    .searchbar {
+      display: none;
+    }
+
+
+  /* About section  */
+  #About #aboutContainer {
+    flex-wrap: wrap-reverse;
+    justify-content: end;
+  }
+  #About #aboutContainer2 {
+    flex-wrap: wrap-reverse;
+    justify-content: end;
+  border-top: 1px solid #b4ffed;
+  }
+  #About .aboutContent{
+      width: 95%;
+  }
+
+
+  /* contact form section  */
+  form {
+    width: 65%;
+  }
+}
+
+
+
+@media screen and (max-width: 556px) {
+   /* Header section  */
+  #logo {
+    display: none;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul li a {
+    padding: 0px 8px;
+  }
+
+
+/* About section  */
+  #About #aboutContainer {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  #About #aboutContainer2 {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  #About .aboutContent{
+      width: 100%;
+      padding: 0px 20px;
+  }
+
+  #About img{
+      height: 350px;
+      width: 350px;
+      }
+
+
+  /* contact form section  */
+  form {
+    width: 85%;
+  }
+
+  #Contact #contactHeading {
+    border-bottom: 1px solid #27ffeb;
+  }
+
+  #Contact > p {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 512px) {
+/* Home section  */
+  #Home #homeContainer h1 {
+    font-size: 38px;
+}
+
+#Home #homeContainer h4 {
+  font-size: 10px;
+}
 }

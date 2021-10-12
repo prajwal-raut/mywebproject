@@ -2,177 +2,208 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <link rel="stylesheet" href="/mywebproject/css/style.css">
-     <link rel="stylesheet" href="/mywebproject/css/responsive.css">
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Project</title>
+  <link rel="stylesheet" href="/mywebproject/css/style.css" />
+  <link rel="stylesheet" href="/mywebproject/css/responsive.css" />
+  <link rel="stylesheet" href="/mywebproject/css/animation.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 </head>
 
 <body>
-    <!-- Navbar -->
+  <!-- header -->
+  <header>
+    <div id="logo">
+      <img src="img/logo.png" alt="mylogo" id="logo" />
+    </div>
     <nav>
-        <div class="navbar" id="nav1">
-            <img src="/mywebproject/img/logo.png" alt="mylogo" id="logo">
-        </div>
-        <div class="navbar" id="nav2">
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="navbar" id="nav3">
-            <ul>
-                <li>
-                    <input type="search" placeholder="Search">
-                </li>
-                <li>
-                    <button id="btn1"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="black"
-                            class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                        </svg></button>
-                </li>
-            </ul>
-        </div>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Contact">Contact Us</a></li>
+      </ul>
     </nav>
+    <div class="searchbar">
+      <input type="search" placeholder="Search" />
+      <span id="searchbtn" class="bi bi-search"></span>
+    </div>
+  </header>
 
-    <!-- Home -->
-    <section id="Home">
-        <div id="content1">
-            <h3 class="glow">This is me ----></h3>
-            <h1 class="glow">PRAJWAL RAUT</h1>
-            <h4 class="glow">I believe in giving the quality and best results every time.</h4>
-            <h4 class="glow">helping Businesses to grow their business.</h4>
-            <button class="btn2" id="btn1">Coding</button>
-            <button class="btn2" id="btn2">Branding</button>
+
+  <!-- Home -->
+  <section id="Home">
+    <div id="homeContainer">
+      <h3>This is me ----></h3>
+      <h1 class="gradient">PRAJWAL RAUT</h1>
+      <h4>
+        I believe in giving the quality and best results every time.
+      </h4>
+      <h4>helping Businesses to grow their business.</h4>
+      <button class="btn2" id="btn1">Coding</button>
+      <button class="btn2" id="btn2">Branding</button>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="About">
+    <div class="container">
+      <h2 id="aboutHeading">About Us</h2>
+    <div id="aboutContainer">
+      <img src="/mywebproject/img/about1.jpg" alt="demo image" />
+      <div class="aboutContent">
+        <p>
+          Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis
+          ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris
+          id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam
+          ultrices, neque et faucibus viverra, ex nulla cursus.
+        </p>
+        <a href="#" >Learn more <span class="fas fa-chevron-circle-right"></span></a>
+    </div>
+    </div>
+    <div class="container">
+    <div id="aboutContainer2">
+      <img src="/mywebproject/img/about1.jpg" alt="demo image" />
+      <div class="aboutContent">
+        <p>
+          Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis
+          ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris
+          id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam
+          ultrices, neque et faucibus viverra, ex nulla cursus.
+        </p>
+        <a href="#" >Learn more <span class="fas fa-chevron-circle-right"></span></a>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section id="Services">
+    <div class="serviceContainer">
+      <h2 id="servicesHeading">our services</h2>
+      <div class="box-container">
+        <div class="box">
+          <span class="number">01</span>
+          <i class="fas fa-code"></i>
+          <h3>front end</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            repudiandae excepturi. Deleniti, voluptate nesciunt qui culpa aut
+            quos quae nobis!
+          </p>
         </div>
-
-    </section>
-
-    <!-- About -->
-    <section id="About">
-        <article>
-            <h2>About Us</h2>
-            <details open>
-                <summary>
-                    When I Started Freelancing?
-                </summary>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod earum quia ipsam labore odio in magnam
-                    quaerat tenetur doloremque dolores.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                    earum quia ipsam labore odio in magnam
-                    quaerat tenetur doloremque dolores.</p>
-            </details>
-            <details>
-                <summary>
-                    How Much I charge for Service?
-                </summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nesciunt tempore beatae!</p>
-            </details>
-            <details>
-                <summary>How to Contact me?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nesciunt tempore beatae!</p>
-            </details>
-        </article>
-        <aside>
-            <img src="/mywebproject/img/about1.jpg" alt="">
-        </aside>
-    </section>
-
-    <!-- Services-->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div id="boxes">
-            <div class="box">
-                <img src="/mywebproject/img/1.jpg" alt="">
-                <h2>HTML 5</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
-                    recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
-            </div>
-            <div class="box">
-                <img src="/mywebproject/img/2.jpg" alt="">
-                <h2>CSS 3</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab
-                    dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
-            </div>
-            <div class="box">
-                <img src="/mywebproject/img/3.jpg" alt="">
-                <h2>JavaScript</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam
-                    minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
-            </div>
+        <div class="box">
+          <span class="number">02</span>
+          <i class="fas fa-paint-brush"></i>
+          <h3>graphic design</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            repudiandae excepturi. Deleniti, voluptate nesciunt qui culpa aut
+            quos quae nobis!
+          </p>
         </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h2> Get In Touch</h2>
-        <div id="contact-box">
-            <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
-                <div class="form-group" id="name">
-                    <label for="name">Name: </label>
-                    <input type="text" name="fname" id="name" placeholder="Enter your name" required><span
-                        class="formerror"></span>
-                </div>
-                <div class="form-group" id="email">
-                    <label for="email">Email: </label>
-                    <input type="email" name="femail" id="email" placeholder="Enter your email" required><span
-                        class="formerror"></span>
-                </div>
-                <div class="form-group" id="phone">
-                    <label for="phone">Phone Number: </label>
-                    <input type="phone" name="fphone" id="phone" placeholder="Enter your phone" required><span
-                        class="formerror"></span>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"
-                        required></textarea><span class="formerror"></span>
-                </div>
-                <div>
-                    <button id="submitbtn" type="submit" value="Submit">SEND MESSAGE</button>
-                </div>
-            </form>
+        <div class="box">
+          <span class="number">03</span>
+          <i class="fas fa-bullhorn"></i>
+          <h3>seo marketing</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            repudiandae excepturi. Deleniti, voluptate nesciunt qui culpa aut
+            quos quae nobis!
+          </p>
         </div>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div>
-            <h2>Follow Me !</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/prajwalraut" target="blank"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#0077b5"
-                            class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                        </svg></a></li>
-                <li><a href="https://github.com/Prajwal-raut" target="blank"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="30" height="30" fill="black" class="bi bi-github" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg></a></li>
-            </ul>
+        <div class="box">
+          <span class="number">04</span>
+          <i class="fas fa-mobile"></i>
+          <h3>responsive</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            repudiandae excepturi. Deleniti, voluptate nesciunt qui culpa aut
+            quos quae nobis!
+          </p>
         </div>
-        <div id="copyright">
-            &copy; 2021 - All rights reserved - prajwalraut.com
+        <div class="box">
+          <span class="number">05</span>
+          <i class="fab fa-wordpress"></i>
+          <h3>wordpress</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            repudiandae excepturi. Deleniti, voluptate nesciunt qui culpa aut
+            quos quae nobis!
+          </p>
         </div>
-    </footer>
+        <div class="box">
+          <span class="number">06</span>
+          <i class="fas fa-tools"></i>
+          <h3>web development</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+            repudiandae excepturi. Deleniti, voluptate nesciunt qui culpa aut
+            quos quae nobis!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Us -->
+  <section id="Contact">
+    <h2 id="contactHeading">Get in touch</h2>
+    <p>
+      Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
+      Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas,
+      purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed
+      ac elementum arcu. Quisque placerat auctor laoreet.
+    </p>
+    <form action="#" method="get" name="myForm" onsubmit="return validateForm()">
+      <div id="nameSec">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" placeholder="Enter Your name.." autocomplete="off" />
+        <span class="formerror"> </span>
+      </div>
+      <div id="emailSec">
+        <label for="Email">Email</label>
+        <input type="email" name="Email" placeholder="Enter Your Email.." autocomplete="off" />
+        <span class="formerror"> </span>
+      </div>
+      <div id="phoneSec">
+        <label for="Phone">Phone Number</label>
+        <input type="text" name="Phone" placeholder="Enter Your Phone.." autocomplete="off" />
+        <span class="formerror"> </span>
+      </div>
+      <div id="msgSec">
+        <label for="Message">Message</label>
+        <textarea name="Message" placeholder="Write something.." cols="30" rows="10" autocomplete="off"></textarea>
+        <span class="formerror"> </span>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer>
+    <div>
+      <h2>👇🏻My Social👇🏻</h2>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/prajwalraut" target="blank"><span class="bi bi-linkedin"></span></a>
+        </li>
+        <li>
+          <a href="https://github.com/Prajwal-raut" target="blank"><span class="bi bi-github"></span></a>
+        </li>
+      </ul>
+    </div>
+    <div id="copyright">
+      &copy; 2021 - All rights reserved - prajwalraut.com
+    </div>
+  </footer>
+  <script src="/mywebproject/JavaScript/index.js"></script>
 </body>
-<script src="/mywebproject/JavaScript/index.js"></script>
 
 </html>

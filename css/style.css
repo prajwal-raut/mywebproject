@@ -1,362 +1,410 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
 
-}
-
-/* ....scroll effect.... */
-html{
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 
-
-/* .....navbar..........  */
-nav{
-    width: 100%;
-    flex-wrap: wrap;
-    background-color: #fd2d22;
-    display: flex;
-    position: sticky;
-    top: 0px;
+body {
+  background-color: #181e35;
 }
 
-/* This is common class for all div in navbar
-.navbar{
-    border: 2px solid red;
-} */
 
-/* Logo */
-#nav1{
-    flex: 1;
-    /* background-color: teal; */
-}
-#nav1 #logo{
-    padding: 8px;
+
+/* Header section  */
+header {
+  background-color: #2b477b;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
-/* list items */
-#nav2{
-    flex: 3;
-    /* background-color: yellow; */
-}
-#nav2 ul{
-    list-style: none;
-}
-#nav2 ul li{
-    display: inline-flex;
-}
-#nav2 ul li a{
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 21px 22px;
-    text-transform: uppercase;
-}
-#nav2 ul li a:hover{
-    color: #fbff00;
+#logo {
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
 }
 
-/* searchbar */
-#nav3{
-    flex: 2;
-    /* background-color: violet; */
+nav {
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
-#nav3 ul{
-   list-style: none;
-   display: flex;
+
+nav ul {
+  list-style: none;
+  display: flex;
 }
-#nav3 input{
-    height: 38px;
-    padding: 0px 15px;
-    margin: 11px 0px;
-    border: none;
-    font-size: 15px;
-    border-radius: 5px 0px 0px 5px;
+
+nav ul li a {
+  padding: 0px 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-#nav3 #btn1{
-    cursor: pointer;
-    padding: 0px 25px;
-    height: 38px;
-    margin: 11px 0px;
-    border-radius: 0px 5px 5px 0px;
-    background-color: #65ffee;
-    border: 1px solid white;
+nav ul li a:hover {
+  color: #d4f4f7;
+  
 }
-#nav3 #btn1:hover{
-    background: #ff006e;
-} 
+
+.searchbar {
+  margin: 0px auto;
+  align-items: center;
+  display: flex;
+}
+
+.searchbar input {
+  height: 38px;
+  padding: 0px 10px;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  color: white;
+  background: #ff7575;
+  box-shadow: 0 10px 50px #ff7c7c, 0 0 0 4px #ffffffeb;
+  animation: searchbox 15s linear infinite;
+}
+
+#searchbtn {
+  padding: 0px 0px;
+  height: 34px;
+  margin: 11px -41px;
+  outline: none;
+  color: white;
+  background: #ff7575;
+  animation: searchbox 15s linear infinite;
+}
+
+.bi-search::before {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 7px 7px;
+}
 
 
 
 /* ....Home.......  */
-#Home ::before{
-    content: "";
-    background:url("/mywebproject/img/Instagram.jpg") no-repeat center center/cover;
-    /* clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0); */
-    clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
-    position: absolute;
-    top: 60px;
-    left: 0px;
-    height: 535px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.92;
-}
-
 #Home {
-    display: flex;
-    height: 535px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-#Home #content1{
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-}
-#Home #content1 h3{
-    font-size: 12px;
-}
-#Home #content1 h1{
-    color: #000000;
-    font-size: 45px;
-    margin: 14px 0px;
-}
-#Home #content1 h4{
-    font-size: 14px;
-    margin: 20px 0px;
-}
-#Home #content1 .btn2{
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 30px;
-    width: 100px;
-    margin-top: 15px;
-    border: 3px solid white;
-}
-#Home #content1 #btn1{
-    background-color: #fff3b0;
-    
-}
-#Home #content1 #btn2{
-    /* background-color:#e0afa0 ; */
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  display: flex;
+  height: 40rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,magenta,lightgreen,cyan,yellow,magenta,lime);
+  mix-blend-mode: multiply;
+  animation: homeSection 5s linear infinite;
 }
 
-/* Animation Property */
-.glow {
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  }
-
-
-
-/* ...About............ */
-#About ::before{
-    content: "";
-    background:url("/mywebproject/img/Ibiza\ Sunset.jpg")  no-repeat center center/cover;
-    position: absolute;
-    top: 595px;
-    left: 0px;
-    height: 555px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.92;
+#Home #homeContainer {
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+ 
+#Home #homeContainer h3 {
+  font-size: 12px;
 }
 
-#About{
-    display: flex;
-    flex-wrap: wrap;
-    height: 555px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    /* border: 3px solid black; */
+#Home #homeContainer h1{
+  font-size: 45px;
+  margin: 14px 0px;
 }
-#About h2{
-    font-size: 30px;
-    margin: 14px 0px;
+
+#Home #homeContainer h4 {
+  font-size: 14px;
+  margin: 20px 0px;
 }
-#About article {
-    width: 60%;
-    background-color:white;
-    /* border: 3px solid black; */
-    padding: 0px 55px 55px 55px;
-    margin: 20px;
+
+#Home #homeContainer .btn2 {
+  cursor: pointer;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 30px;
+  width: 100px;
+  margin-top: 15px;
+  border: 3px solid white;
 }
-#About article summary{
-    background-color: #e7f1ff;
-    border: 1px solid #dfdfdf;
+
+#Home #homeContainer #btn1 {
+  background-color: #3f51b5;
 }
-#About aside {
-    margin: 20px;
-    width: 30%;
-    box-shadow: 11px 12px 5px 0px rgba(0,0,0,0.75);
-    background: black;
+
+#Home #homeContainer #btn2 {
+  background: linear-gradient( 60deg,#f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82
+  );
 }
 
 
 
-/* ...Services............ */
-#services ::before{
-    content: "";
-    background:url("/mywebproject/img/Instagram.jpg") no-repeat center center/cover;
-    position: absolute;
-    top: 1150px;
-    left: 0px;
-    height: 620px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.92;
+/* About */
+#About {
+  color: #fff;
 }
 
-#services{
-    height: 620px;
+#About #aboutHeading {
+  text-align: center;
+  color: #b4ffed;
+  width: fit-content;
+  margin: 20px auto;
+  font-size: 50px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #27ffeb;
 }
-#services h2{
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    margin: 25px 0px 0px 0px;
-}
-#services #boxes{
-    margin: 34px 0px;
-    display: flex;
-    height: 580px;
-    width: 100%;
-}
-#services #boxes h2{
-    font-size: 30px;
-    text-align: center;
-    color: #ef233c;
-}
-#services #boxes .box{ 
 
-    border: 2px solid brown;
-    padding: 34px;
-    margin: 0px 55px 97px 55px;
-    border-radius: 28px;
-    background: #F6F0ED;
+#About #aboutContainer {
+  display: flex;
+  justify-content: space-evenly;
 }
-#services #boxes .box:hover{
-    background-color: #d2ffa9;
+
+#About #aboutContainer2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  position: relative;
+  top: 26px;
 }
-#services #boxes .box img{ 
-   height: 160px;
-   margin: auto;
-   display: block;
-   width: 100%;
+
+#About .aboutContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 64px;
+  width: 50%;
 }
-#services #boxes .box p{
-    font-family: 'Bree Serif', serif;
+
+#About .aboutContent p{
+  padding: 49px 0px;
+  line-height: 28px;
 } 
 
-
-
-/* ...Contact............ */
-#contact ::before{
-    content: "";
-    background:url("/mywebproject/img/Ibiza\ Sunset.jpg") no-repeat center center/cover;
-    position: absolute;
-    top: 1770px;
-    left: 0px;
-    height: 630px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.92;
+#About .aboutContent a{
+  font-weight: 600;
+  color: #39ccdb;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  line-height: 26px;
+  width: fit-content;
 }
 
-#contact{
-    height: 558px;
+#About .aboutContent a > span{
+  font-size: 17px;
+    padding: 0px 3px;
 }
-#contact h2{
-    font-size: 30px;
-    text-align: center;
-    color: #65f1ff;
-    margin: 25px 0px 0px 0px;
+
+#About img{
+  height: 400px;
+  width: 400px;
+  margin: 40px 92px;
+  box-shadow: 16px 5px 45px 8px rgb(101, 255, 241);
 }
-#contact #contact-box{
-    display: flex;
-    justify-content: center;
+
+
+
+/* Services */
+#Services .serviceContainer {
+  padding: 20px 9%;
 }
-#contact #contact-box form{
-    width: 50%;
-    margin: 20px 0px;
+
+#Services .serviceContainer #servicesHeading {
+  margin: 20px 0px;
+  text-align: center;
+  color: #b4ffed;
+  font-size: 50px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #27ffeb;
 }
-#contact #contact-box form .formerror{
-    font-weight: bold;
-    background-color: beige;
-    color: red;
-    border-radius: 10px;
-    display: block;
-    text-align: center;
+
+#Services .serviceContainer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 45px;
 }
-#contact #contact-box input, 
-#contact #contact-box textarea{
-    width: 100%;
-    padding: 10px;
-    border: #fff 1px solid;
-    border-radius: 10px;
-    font-size: 15px;
-    background-color: black;
-    color: blanchedalmond;
-} 
-#contact #contact-box ::placeholder {
-    color: red;
+
+#Services .serviceContainer .box-container .box {
+  flex: 1 1 300px;
+  text-align: center;
+  background: #eee;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
-#contact #contact-box label{
-   font-size: 20px;
-   color: #fff;
+
+#Services .serviceContainer .box-container .box i {
+  font-size: 40px;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 10px 0;
+  color: #474893;
 }
-#contact #submitbtn{
-    background-color: black;
-    color: white;
-    font-size: 13px;
-    padding: 12px 15px;
-    border-radius: 18px;
-    float: right;
-    margin: 10px 0px;
-    cursor: pointer;
+
+#Services .serviceContainer .box-container .box h3 {
+  font-size: 25px;
+  color: #666;
+  text-transform: capitalize;
 }
-#contact #submitbtn:hover{
-    background-color: #4f16e8;
+
+#Services .serviceContainer .box-container .box p {
+  font-size: 18px;
+  color: #999;
+  padding: 5px;
 }
+
+#Services .serviceContainer .box-container .box .number {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+#Services .serviceContainer .box-container .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.3s linear;
+  background: linear-gradient(45deg, aqua, fuchsia);
+  clip-path: circle(28% at 5% 0);
+}
+
+#Services .serviceContainer .box-container .box:hover::before {
+  clip-path: circle(100%);
+}
+
+#Services .serviceContainer .box-container .box:hover > * {
+  color: #fff;
+}
+
+
+
+/* Contact form  */
+#Contact {
+  padding: 20px;
+}
+
+#Contact #contactHeading {
+  margin: 34px 0 0 0px;
+  text-align: center;
+  color: #b4ffed;
+  font-size: 50px;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+#Contact > p {
+  color: white;
+  width: 80%;
+  margin: 15px auto;
+  line-height: 27px;
+  padding: 18px 25px;
+  border-top: 1px solid #27ffeb;
+  font-size: 15px;
+  border-bottom: 1px solid #27ffeb;
+}
+
+form {
+  width: 55%;
+  margin: 50px auto;
+  background: #ffffff12;
+  border-radius: 10px;
+  padding: 50px 40px;
+  box-shadow: 0 0 20px #16c4a3;
+}
+
+form div > label {
+  color: aliceblue;
+  font-size: 18px;
+}
+
+form .formerror {
+  color: #fd9a9a;
+  position: relative;
+  top: -9px;
+  padding: 0px 14px;
+}
+
+input[type="text"],input[type="email"],textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 6px 0 16px 0;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #657dff;
+  color: white;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #35c7a9;
+  }
 
 
 
 /* ...Footer......... */
-footer div h2{
-    text-align: center;
-    text-decoration: underline;
-    margin: 35px 0px 0px 0px;
-    color: #9c3d60;
+footer{
+  background-color: black;
 }
-footer div ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 8px 0px;
+
+footer div h2 {
+  text-align: center;
+  margin: 35px 0px 0px 0px;
+  padding-top: 8px;
+  color: #000000;
+  animation: glow 1s ease-in-out infinite alternate;
 }
-footer div ul li a{
-   padding: 0px 5px;
+
+footer div ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 10px 0px;
 }
-footer #copyright{
+
+footer div ul li a {
+  padding: 0px 5px;
+}
+
+/* social media icons */
+.bi-linkedin::before {
+  color: #0a66c2;
+}
+.bi-github::before {
+  color: #f0f6fc;
+}
+
+footer div ul li a > span {
+  font-size: 30px;
+}
+
+footer #copyright {
   text-align: center;
   padding: 7px 0px;
-  background-color: black;
   color: white;
 }
