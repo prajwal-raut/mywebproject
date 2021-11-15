@@ -1,3 +1,6 @@
+// Browser Warning
+alert("Some Animation doesn't work in Chrome & Mozilla Firefox... So i recommend to Use Microsoft Edge for better Experience")
+
 function clearErrors() {
   errors = document.getElementsByClassName("formerror");
   // get the all errors value and iterate one by one
