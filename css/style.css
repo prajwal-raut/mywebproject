@@ -347,6 +347,7 @@ input[type="text"],input[type="email"],textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  outline: none;
   margin: 6px 0 16px 0;
   resize: vertical;
 }
